@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rang tanlash</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 28px;
+      font-family: sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    // Prompt orqali ranglar so‘raladi
+    const backgroundColor = prompt("Orqa fon rangini kiriting (masalan: blue, red, #123456):");
+    const textColor = prompt("Matn rangini kiriting (masalan: yellow, white, #00ff00):");
+
+    // Ranglar sahifaga qo‘llanadi
+    document.body.style.backgroundColor = backgroundColor || "black";
+    document.body.style.color = textColor || "white";
+
+    // Matn qo‘shiladi
+    document.body.innerText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`;
+  </script>
+</body>
+</html>
